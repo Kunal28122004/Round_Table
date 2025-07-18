@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
       <div className="text-center">
-        <h1 className="text-4xl font-bold italic text-foreground mb-4">.dot</h1>
+        <h1 className="text-4xl font-bold italic text-foreground mb-4">Roundtable</h1>
         <p className="text-xl text-muted-foreground">Loading your workspace...</p>
       </div>
     </div>
