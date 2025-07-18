@@ -44,7 +44,7 @@ Roundtable is a modern productivity and collaboration platform built for individ
 ### 🔧 Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Kunal28122004/Round_Table
 cd roundtable
 npm install
 npm run dev
