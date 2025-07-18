@@ -55,7 +55,7 @@ const App = () => {
               element={
                 isAuthenticated ? 
                 <Navigate to="/" replace /> : 
-                <Auth mode="signup" onSignup={handlesignup} />
+                <Auth mode="signup" onLogin={handlesignup} />
               } 
             />
             {isAuthenticated ? (
