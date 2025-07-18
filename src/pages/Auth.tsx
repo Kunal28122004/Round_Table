@@ -83,7 +83,7 @@ export default function Auth({ mode, onLogin }: AuthProps) {
         <CardContent className="p-8">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold italic text-foreground mb-2">
-              FlowHub
+              RoundTable
             </h1>
             <p className="text-muted-foreground">
               {isSignUp ? "Create your account" : "Sign in to your account"}
