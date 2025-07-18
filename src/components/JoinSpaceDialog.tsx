@@ -29,7 +29,7 @@ export function JoinSpaceDialog({ children }: JoinSpaceDialogProps) {
       </DialogTrigger>
       <DialogContent className="max-w-sm bg-card border-border">
         <div className="p-6">
-          <h2 className="text-2xl font-light italic text-foreground mb-8">Join space</h2>
+          <h2 className="text-2xl font-light italic text-foreground mb-8">Join Table</h2>
           
           <div className="space-y-6">
             {/* Space Code Form */}
