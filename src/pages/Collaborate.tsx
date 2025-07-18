@@ -51,7 +51,7 @@ const spaces = [
 const buddies = [
   { name: "Kunal Chauhan", role: "Developer", status: "chat", avatar: "bg-dot-blue" },
   { name: "Krish Prajapati", role: "Designer", status: "online", avatar: "bg-dot-pink" },
-  { name: "Dnyanesh", role: "Developer", status: "chat", avatar: "bg-dot-green" },
+  { name: "Dnyanesh Chaudhari", role: "Developer", status: "chat", avatar: "bg-dot-green" },
   { name: "Jay Nirmal", role: "Designer", status: "chat", avatar: "bg-dot-orange" },
   { name: "Srujal Shah", role: "Content Writer ", status: "chat", avatar: "bg-dot-purple" }
 ];
