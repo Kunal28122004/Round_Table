@@ -1,10 +1,10 @@
-
 import { useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+
 import { Layout } from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import Tasks from "./pages/Tasks";
@@ -21,17 +21,16 @@ const queryClient = new QueryClient();
 const App = () => {
   // State to track authentication
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
-    // Check if user is already logged in from localStorage
-    return localStorage.getItem('isLoggedIn') === 'true';
+    return localStorage.getItem("isLoggedIn") === "true";
   });
 
-  const handleLogin = () => {
-    localStorage.setItem('isLoggedIn', 'true');
+  const handleAuthSuccess = () => {
+    localStorage.setItem("isLoggedIn", "true");
     setIsAuthenticated(true);
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem("isLoggedIn");
     setIsAuthenticated(false);
   };
 
@@ -42,22 +41,29 @@ const App = () => {
         <Sonner />
         <HashRouter>
           <Routes>
-            <Route 
-              path="/auth" 
+            {/* Auth Routes */}
+            <Route
+              path="/auth"
               element={
-                isAuthenticated ? 
-                <Navigate to="/" replace /> : 
-                <Auth mode="signin" onLogin={handleLogin} />
-              } 
+                isAuthenticated ? (
+                  <Navigate to="/" replace />
+                ) : (
+                  <Auth mode="signin" onLogin={handleAuthSuccess} />
+                )
+              }
             />
-            <Route 
-              path="/signup" 
+            <Route
+              path="/signup"
               element={
-                isAuthenticated ? 
-                <Navigate to="/" replace /> : 
-                <Auth mode="signup" onSignup={handlesignup} />
-              } 
+                isAuthenticated ? (
+                  <Navigate to="/" replace />
+                ) : (
+                  <Auth mode="signup" onSignup={handleAuthSuccess} />
+                )
+              }
             />
+
+            {/* Protected Routes */}
             {isAuthenticated ? (
               <Route path="/" element={<Layout onLogout={handleLogout} />}>
                 <Route index element={<Dashboard />} />
@@ -71,6 +77,8 @@ const App = () => {
             ) : (
               <Route path="/" element={<Navigate to="/auth" replace />} />
             )}
+
+            {/* Catch-all */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </HashRouter>
