@@ -49,11 +49,11 @@ const spaces = [
 ];
 
 const buddies = [
-  { name: "Krish Prajapati", role: "Designer", status: "chat", avatar: "bg-dot-pink" },
-  { name: "Krish Prajapati", role: "Designer", status: "online", avatar: "bg-dot-blue" },
-  { name: "Krish Prajapati", role: "Designer", status: "chat", avatar: "bg-dot-green" },
-  { name: "Krish Prajapati", role: "Designer", status: "chat", avatar: "bg-dot-orange" },
-  { name: "Krish Prajapati", role: "Designer", status: "chat", avatar: "bg-dot-purple" }
+  { name: "Kunal Chauhan", role: "Developer", status: "chat", avatar: "bg-dot-blue" },
+  { name: "Krish Prajapati", role: "Designer", status: "online", avatar: "bg-dot-pink" },
+  { name: "Dnyanesh", role: "Developer", status: "chat", avatar: "bg-dot-green" },
+  { name: "Jay Nirmal", role: "Designer", status: "chat", avatar: "bg-dot-orange" },
+  { name: "Srujal Shah", role: "Content Writer ", status: "chat", avatar: "bg-dot-purple" }
 ];
 
 export default function Collaborate() {
