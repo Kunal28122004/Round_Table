@@ -43,7 +43,7 @@ export function CreateSpaceDialog({ children }: CreateSpaceDialogProps) {
       </DialogTrigger>
       <DialogContent className="max-w-md bg-card border-border">
         <div className="p-6">
-          <h2 className="text-2xl font-light italic text-foreground mb-6">+ Create Table</h2>
+          <h2 className="text-2xl font-light italic text-foreground mb-6"> Create Table</h2>
           
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Cover Image Upload */}
