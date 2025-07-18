@@ -13,3 +13,8 @@
   ],
   "outputDirectory": "dist"
 }
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
