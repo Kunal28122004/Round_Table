@@ -1,84 +1,103 @@
+# 🛡️ Roundtable — Productivity & Collaboration Platform
 
-# Roundtable - Productivity & Collaboration Platform
+[Live Demo →](https://round-table-zeta.vercel.app/)
 
-A modern, full-featured productivity and collaboration platform built for teams and individuals who want to stay organized and achieve their goals.
+Roundtable is a modern productivity and collaboration platform built for individuals and teams to manage goals, tasks, and projects—all in one unified workspace.
 
-## Features
+> Stay organized. Collaborate better. Accomplish more.
 
-- **Goal Management**: Track and manage your personal and team goals
-- **Task Management**: Create, assign, and track tasks with priorities and deadlines
-- **Team Collaboration**: Create spaces for team collaboration and communication
-- **Resource Sharing**: Share files, links, and other resources with your team
-- **Showcase**: Display your completed projects and achievements
-- **Real-time Notifications**: Stay updated with important changes and updates
+---
 
-## Technologies Used
+## ✨ Features
 
-- React 18+ with TypeScript
-- Vite for fast development and building
-- Tailwind CSS for styling
-- Radix UI components for accessibility
-- React Router for navigation
-- TanStack Query for data fetching
-- Lucide React for icons
+- 🎯 **Goal Management** – Define, track, and complete personal or team goals  
+- ✅ **Task Management** – Prioritize and organize tasks with due dates and assignees  
+- 🧠 **Knowledge Spaces** – Centralize collaboration with shared workspaces  
+- 📂 **Resource Sharing** – Upload and share links, files, or references  
+- 🖼️ **Project Showcase** – Highlight and display your accomplishments  
+- 🔔 **Real-time Notifications** – Get instant updates on activity and progress  
 
-## Getting Started
+---
 
-### Prerequisites
+## ⚙️ Tech Stack
 
-- Node.js 16+ and npm
+| Tech               | Usage                          |
+|--------------------|--------------------------------|
+| **React 18+**       | UI Development (w/ TypeScript) |
+| **Vite**            | Fast bundling & dev server     |
+| **Tailwind CSS**    | Utility-first styling          |
+| **Radix UI**        | Accessible UI components       |
+| **React Router**    | Routing and navigation         |
+| **TanStack Query**  | API data fetching/caching      |
+| **Lucide React**    | Icon system                    |
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Node.js 16+
+- npm
 - Git
 
-### Installation
+### 🔧 Installation
 
-1. Clone the repository
 ```bash
-git clone <>
+git clone <repository-url>
 cd roundtable
-```
-
-2. Install dependencies
-```bash
 npm install
-```
-
-3. Start the development server
-```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Building for Production
+---
+
+## 🏗️ Build for Production
 
 ```bash
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+Build files will be available in the `dist/` directory.
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```
 src/
 ├── components/     # Reusable UI components
-├── pages/         # Page components
-├── hooks/         # Custom React hooks
-├── lib/           # Utility functions
-└── main.tsx       # Application entry point
+├── pages/          # Page-level components
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions & helpers
+└── main.tsx        # Application entry point
 ```
 
-## Contributing
+---
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+## 🤝 Contributing
 
-## License
+We welcome contributions!
 
-This project is proprietary software. All rights reserved.
+1. Fork the repo  
+2. Create a feature branch (`git checkout -b feature-name`)  
+3. Commit your changes  
+4. Push to your fork  
+5. Submit a pull request 🚀  
 
-## Support
+---
 
-For support and questions, please contact the Roundtable team.
+## 📜 License
+
+**Proprietary Software** — All rights reserved.
+
+---
+
+## 💬 Support
+
+Have questions or feedback?
+
+- Reach out to the development team  
+- Or open an issue in the repository (if applicable)
